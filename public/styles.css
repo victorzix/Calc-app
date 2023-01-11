@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@font-face {
+  font-family: "Share Tech Mono", monospace;
+  src: url("../fonts/ShareTechMono-regular.ttf");
+  font-weight: 900;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 29px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  -webkit-app-region: no-drag;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3efe0;
+}
+.calc {
+  height: 430px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.screen {
+  height: 430px;
+  width: 280px;
+  background-color: #f3efe0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 1, 6% 1.6% 0 0;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.previous-op {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 35px;
+  color: #434242;
+  opacity: 0.6;
+}
+.current-op {
+  font-size: 60px;
+  font-family: "Share Tech Mono", monospace;
+  color: #434242;
+}
+.numbers {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1.3fr 1fr 1fr 1fr 1fr;
+}
+.line {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.7fr;
+}
+.line:nth-child(1) {
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.7fr;
+}
+.line:nth-child(1) div {
+  background-color: #22a39f;
+}
+.zero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.7fr;
+}
+
+button {
+  font-family: "Share Tech Mono", monospace;
+  background-color: #22a39f;
+  border: 0px;
+}
+button:hover {
+  background-color: #168683;
+  opacity: 0.6;
+}
+
+nav {
+  width: 100vw;
+  height: 27px;
+  background-color: #22a39f;
+  color: #434242;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-app-region: drag;
+}
+.github a img {
+  width: 18px;
+  -webkit-app-region: no-drag;
+}
+@keyframes grow
+{
+  to{
+    transform: scale(1.1);
+  }
+}
+.github a img:hover{
+  animation: grow ease-in-out 200ms;
+}
+.github
+{
+  padding: 0px 3px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-app-region: no-drag;
+}
+.app-title {
+  font-size: 15px;
+
+}
+#calculator-title {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  left: 35%;
+  position: absolute;
+}
+#calculator-title a {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  height: 100%;
+}
+.nav {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  -webkit-app-region: drag;
+}
+.nav-link {
+  font-size: 15px;
+  -webkit-app-region: no-drag;
+  height: 100%;
+  padding: 7px 15px 7px 15px;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 5px 15px 7px 15px;
+}

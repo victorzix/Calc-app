@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calc</title>
+  </head>
+  <body>
+    <nav>
+      <div class="github" id="gotogit">
+        <a href="" id="gogit"
+          ><img src="../IMG/github.svg" alt="" id="gogit"
+        /></a>
+      </div>
+      <div id="calculator-title">
+        <h2 class="app-title">Calculator</h2>
+      </div>
+      <div class="nav">
+        <span class="nav-link" id="minimize">&minus;</span>
+        <span class="nav-link" id="close-app">X</span>
+      </div>
+    </nav>
+    <div class="calc">
+      <div class="screen">
+        <p class="previous-op" id="previous-op" data-prev-op></p>
+        <p class="current-op" id="current-op" data-current-op></p>
+      </div>
+      <div class="numbers">
+        <div class="line">
+          <button data-clear>AC</button>
+          <button data-delete>Del</button>
+          <button data-op>÷</button>
+        </div>
+        <div class="line">
+          <button data-number>7</button>
+          <button data-number>8</button>
+          <button data-number>9</button>
+          <button data-op>-</button>
+        </div>
+        <div class="line">
+          <button data-number>4</button>
+          <button data-number>5</button>
+          <button data-number>6</button>
+          <button data-op>&plus;</button>
+        </div>
+        <div class="line">
+          <button data-number>1</button>
+          <button data-number>2</button>
+          <button data-number>3</button>
+          <button data-op>*</button>
+        </div>
+        <div class="line zero">
+          <button data-number>.</button>
+          <button data-number>0</button>
+          <button data-equal>Enter</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/calc.js" defer></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/menuHandler.js"></script>
+</html>
