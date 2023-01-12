@@ -1,16 +1,24 @@
 {
-  "name": "calc",
+  "name": "calculator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "electron ."
+    "dev": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "keywords": [],
   "author": "Victor",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^22.0.1",
     "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "victor.calc",
+    "mac": {
+      "category": "utility"
+    }
   }
 }
